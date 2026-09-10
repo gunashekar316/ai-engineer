@@ -3,7 +3,8 @@ from pathlib import Path
 
 def populate_translation_map():
     # Load extracted elements
-    extracted_path = Path("extracted_ui_elements.json")
+    script_dir = Path(__file__).resolve().parent
+    extracted_path = script_dir / "extracted_ui_elements.json"
     with open(extracted_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
         
@@ -76,7 +77,7 @@ def populate_translation_map():
         "ui_labels": labels_map
     }
     
-    out_path = Path("src/segmentation/translation_map.json")
+    out_path = script_dir / "src" / "segmentation" / "translation_map.json"
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(translation_map, f, ensure_ascii=False, indent=2)
         
