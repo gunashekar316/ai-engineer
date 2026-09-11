@@ -9,6 +9,13 @@ def load_translation_map(project_root):
             return json.load(f)
     return {"apps_and_windows": {}, "urls": {}, "ui_labels": {}}
 
+def apply_mapping(enriched_info, mapping_dict, key):
+    if key in mapping_dict:
+        obj = mapping_dict[key]
+        for k, v in obj.items():
+            if v and v != "general":
+                enriched_info[k] = v
+
 def enrich_and_reconstruct(events, translation_map):
     enriched = []
     
@@ -38,7 +45,6 @@ def enrich_and_reconstruct(events, translation_map):
         context = event.get('context') or {}
         timestamp = event.get('timestamp_ms', 0)
         
-        # Enrichment
         enriched_info = {}
         
         # App/Window
@@ -46,18 +52,17 @@ def enrich_and_reconstruct(events, translation_map):
         if active_app:
             if isinstance(active_app, dict):
                 title = active_app.get('window_title') or active_app.get('app_name')
-                if title in translation_map.get('apps_and_windows', {}):
-                    enriched_info['app_category'] = translation_map['apps_and_windows'][title]
+                apply_mapping(enriched_info, translation_map.get('apps_and_windows', {}), title)
             elif isinstance(active_app, str):
-                if active_app in translation_map.get('apps_and_windows', {}):
-                    enriched_info['app_category'] = translation_map['apps_and_windows'][active_app]
+                apply_mapping(enriched_info, translation_map.get('apps_and_windows', {}), active_app)
                     
         # URL
         active_browser = context.get('active_browser_tab')
         if active_browser and isinstance(active_browser, dict):
             url = active_browser.get('url')
-            if url in translation_map.get('urls', {}):
-                enriched_info['domain'] = translation_map['urls'][url]
+            title = active_browser.get('title')
+            apply_mapping(enriched_info, translation_map.get('urls', {}), url)
+            apply_mapping(enriched_info, translation_map.get('urls', {}), title)
                 
         # UI Labels
         if event_type in ('browser_click', 'browser_form_input'):
@@ -66,8 +71,13 @@ def enrich_and_reconstruct(events, translation_map):
             if isinstance(attributes, dict):
                 for k, v in attributes.items():
                     if v in translation_map.get('ui_labels', {}):
-                        enriched_info['inferred_intent'] = translation_map['ui_labels'][v]
-                        break
+                        apply_mapping(enriched_info, translation_map.get('ui_labels', {}), v)
+                        
+        # Extracted text check
+        extracted_text = context.get('extracted_text')
+        if extracted_text and isinstance(extracted_text, str):
+            text_val = extracted_text.strip()
+            apply_mapping(enriched_info, translation_map.get('ui_labels', {}), text_val)
         
         if enriched_info:
             event['enriched_context'] = enriched_info
@@ -98,51 +108,54 @@ def enrich_and_reconstruct(events, translation_map):
 def process_datasets():
     script_dir = Path(__file__).resolve().parent
     project_root = script_dir.parent.parent
-    base_dir = project_root / "dataset_a"
-    out_dir = project_root / "enriched_dataset_a"
     
-    if not base_dir.exists():
-        print(f"Error: {base_dir} not found.")
-        return
+    # Process both dataset_a and dataset_b
+    for dataset_name in ["dataset_a", "dataset_b"]:
+        base_dir = project_root / dataset_name
+        out_dir = project_root / f"enriched_{dataset_name}"
         
-    translation_map = load_translation_map(project_root)
-    
-    sessions_data = {}
-    event_files = list(base_dir.rglob("events.jsonl"))
-    
-    for path in event_files:
-        if path.parent.name.startswith("chunk_"):
-            session_id = path.parent.parent.name
-        else:
-            session_id = path.parent.name
+        if not base_dir.exists():
+            print(f"Skipping {dataset_name}, not found.")
+            continue
             
-        if session_id not in sessions_data:
-            sessions_data[session_id] = []
-            
-        with open(path, 'r', encoding='utf-8') as f:
-            for line in f:
-                if not line.strip(): continue
-                try:
-                    event = json.loads(line)
-                    sessions_data[session_id].append(event)
-                except:
-                    continue
-
-    out_dir.mkdir(parents=True, exist_ok=True)
-    
-    for session_id, events in sessions_data.items():
-        events.sort(key=lambda x: x.get('timestamp_ms', 0))
-        enriched_events = enrich_and_reconstruct(events, translation_map)
+        translation_map = load_translation_map(project_root)
         
-        session_out_dir = out_dir / session_id
-        session_out_dir.mkdir(parents=True, exist_ok=True)
+        sessions_data = {}
+        event_files = list(base_dir.rglob("events.jsonl"))
         
-        out_file = session_out_dir / "enriched_events.jsonl"
-        with open(out_file, 'w', encoding='utf-8') as f:
-            for e in enriched_events:
-                f.write(json.dumps(e, ensure_ascii=False) + '\n')
+        for path in event_files:
+            if path.parent.name.startswith("chunk_"):
+                session_id = path.parent.parent.name
+            else:
+                session_id = path.parent.name
                 
-    print(f"Enriched {len(sessions_data)} sessions and saved to {out_dir}")
+            if session_id not in sessions_data:
+                sessions_data[session_id] = []
+                
+            with open(path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    if not line.strip(): continue
+                    try:
+                        event = json.loads(line)
+                        sessions_data[session_id].append(event)
+                    except:
+                        continue
+
+        out_dir.mkdir(parents=True, exist_ok=True)
+        
+        for session_id, events in sessions_data.items():
+            events.sort(key=lambda x: x.get('timestamp_ms', 0))
+            enriched_events = enrich_and_reconstruct(events, translation_map)
+            
+            session_out_dir = out_dir / session_id
+            session_out_dir.mkdir(parents=True, exist_ok=True)
+            
+            out_file = session_out_dir / "enriched_events.jsonl"
+            with open(out_file, 'w', encoding='utf-8') as f:
+                for e in enriched_events:
+                    f.write(json.dumps(e, ensure_ascii=False) + '\n')
+                    
+        print(f"Enriched {len(sessions_data)} sessions and saved to {out_dir}")
 
 if __name__ == '__main__':
     process_datasets()
