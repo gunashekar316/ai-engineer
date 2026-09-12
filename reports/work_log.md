@@ -53,5 +53,6 @@
 - **Establish Automation Ranking & ROI Matrix:** Built a multi-factor scoring model combining an Impact Score (60% duration share + 40% frequency) and an Implementation Feasibility Score (40% path predictability + 30% low app-switching friction + 30% input determinism).
 - **Candidate #1 Selection (`salary_maintenance`):** Ranked `salary_maintenance` as the top candidate (Priority Score: **67.8**). While `expense_claim` had slightly higher total time (16.48% vs 13.62%), it suffered from severe friction (10.7 app switches/run across Word, Excel, and Edge) and high branching entropy (29 distinct variants). Conversely, `salary_maintenance` has the highest execution frequency (34 runs), minimal application switching (3.7 switches/run), and 100% deterministic web form inputs (`#pi-note` and `#btn-pi-ok`), maximizing implementation feasibility and practical client ROI for Phase 3 prototype automation.
 - **Draft Step 2 in Final Report:** Created `reports/final_report.md` incorporating the full operations summary table, variance analysis, the ROI prioritization matrix, and technical justification for Candidate #1.
+- **Generative AI Prompt Tracking:** Documented all key engineering prompts, debugging sessions, and heuristic design queries utilized throughout Days 1–4 in `reports/prompt_log.md` to ensure strict adherence to project documentation guidelines.
 
 
