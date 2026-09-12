@@ -48,3 +48,10 @@
 
 - **Deliverable 1 Generation (Dataset B):** Enriched `dataset_b` into `enriched_dataset_b/` and generated the final `segments.jsonl` in the repository root. Ran `validate_schema.py` to confirm 100% compliance with ISO 8601 UTC timestamps, required schema keys, and strict JSONL line formatting across all 191 segments.
 
+## Day 4: Operations Analysis & Automation Prioritization (Phase 2)
+- **Implement Operational Analysis Engine:** Wrote `src/analysis/analyze_dataset_b.py` to ingest `segments.jsonl` and raw event streams from `enriched_dataset_b/`. Extracted frequency, cumulative and average duration, operational time share, worker machine spread, application switching entropy, keystroke/clipboard activity, and execution path signatures across all 12 recovered workflows. Saved aggregated data to `src/analysis/process_metrics.json`.
+- **Establish Automation Ranking & ROI Matrix:** Built a multi-factor scoring model combining an Impact Score (60% duration share + 40% frequency) and an Implementation Feasibility Score (40% path predictability + 30% low app-switching friction + 30% input determinism).
+- **Candidate #1 Selection (`salary_maintenance`):** Ranked `salary_maintenance` as the top candidate (Priority Score: **67.8**). While `expense_claim` had slightly higher total time (16.48% vs 13.62%), it suffered from severe friction (10.7 app switches/run across Word, Excel, and Edge) and high branching entropy (29 distinct variants). Conversely, `salary_maintenance` has the highest execution frequency (34 runs), minimal application switching (3.7 switches/run), and 100% deterministic web form inputs (`#pi-note` and `#btn-pi-ok`), maximizing implementation feasibility and practical client ROI for Phase 3 prototype automation.
+- **Draft Step 2 in Final Report:** Created `reports/final_report.md` incorporating the full operations summary table, variance analysis, the ROI prioritization matrix, and technical justification for Candidate #1.
+
+

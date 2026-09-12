@@ -1,0 +1,1054 @@
+{
+  "total_duration_sec": 9863.1,
+  "total_segments_count": 191,
+  "ranked_processes": [
+    {
+      "label": "salary_maintenance",
+      "frequency": 34,
+      "cumulative_duration_sec": 1343.0,
+      "avg_duration_sec": 39.5,
+      "time_share_pct": 13.62,
+      "session_count": 10,
+      "machine_count": 4,
+      "avg_events": 86.4,
+      "avg_switches": 3.7,
+      "avg_keys": 19.8,
+      "avg_clicks": 20.5,
+      "dominant_path_ratio": 0.206,
+      "impact_score": 89.6,
+      "feasibility_score": 41.2,
+      "composite_score": 67.8,
+      "raw_metrics": {
+        "frequency": 34,
+        "cumulative_duration_sec": 1343.0,
+        "avg_duration_sec": 39.5,
+        "std_duration_sec": 32.4,
+        "time_share_pct": 13.62,
+        "session_count": 10,
+        "machine_count": 4,
+        "avg_events_per_run": 86.4,
+        "avg_app_switches": 3.7,
+        "avg_keystrokes": 19.8,
+        "avg_clicks": 20.5,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 13.8,
+        "total_errors": 6,
+        "distinct_variants": 17,
+        "dominant_path_ratio": 0.206,
+        "top_paths": [
+          {
+            "path": "#/payroll-items -> HR人事給与システム and 1 more page -> #/payroll-items -> HR人事給与システム and 1 more page -> #/payroll-items",
+            "count": 7,
+            "ratio": 0.21
+          },
+          {
+            "path": "#/payroll-items -> HR人事給与システム -> #/payroll-items -> HR人事給与システム -> #/payroll-items",
+            "count": 6,
+            "ratio": 0.18
+          },
+          {
+            "path": "#/payroll-items -> 財務会計システム -> #/payroll-items -> 財務会計システム -> #/payroll-items",
+            "count": 4,
+            "ratio": 0.12
+          }
+        ]
+      },
+      "priority_rank": 1
+    },
+    {
+      "label": "expense_claim",
+      "frequency": 30,
+      "cumulative_duration_sec": 1625.7,
+      "avg_duration_sec": 54.2,
+      "time_share_pct": 16.48,
+      "session_count": 13,
+      "machine_count": 4,
+      "avg_events": 113.3,
+      "avg_switches": 10.7,
+      "avg_keys": 35.6,
+      "avg_clicks": 16.1,
+      "dominant_path_ratio": 0.067,
+      "impact_score": 95.3,
+      "feasibility_score": 22.7,
+      "composite_score": 62.6,
+      "raw_metrics": {
+        "frequency": 30,
+        "cumulative_duration_sec": 1625.7,
+        "avg_duration_sec": 54.2,
+        "std_duration_sec": 43.9,
+        "time_share_pct": 16.48,
+        "session_count": 13,
+        "machine_count": 4,
+        "avg_events_per_run": 113.3,
+        "avg_app_switches": 10.7,
+        "avg_keystrokes": 35.6,
+        "avg_clicks": 16.1,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 23.3,
+        "total_errors": 9,
+        "distinct_variants": 29,
+        "dominant_path_ratio": 0.067,
+        "top_paths": [
+          {
+            "path": "getsujitsu_teigaku_torihikisaki_ichiran -> #/payroll-items -> 財務会計システム -> #/payroll-items -> 財務会計システム",
+            "count": 2,
+            "ratio": 0.07
+          },
+          {
+            "path": "Windows PowerShell -> / -> Untitled and 1 more page -> / -> 受発注在庫管理システム and 1 more page",
+            "count": 1,
+            "ratio": 0.03
+          },
+          {
+            "path": "#/payroll-items -> 財務会計システム and 1 more page -> #/payroll-items -> 財務会計システム and 1 more page -> #/payroll-items",
+            "count": 1,
+            "ratio": 0.03
+          }
+        ]
+      },
+      "priority_rank": 2
+    },
+    {
+      "label": "inventory_adjustment",
+      "frequency": 24,
+      "cumulative_duration_sec": 1125.8,
+      "avg_duration_sec": 46.9,
+      "time_share_pct": 11.41,
+      "session_count": 10,
+      "machine_count": 4,
+      "avg_events": 101.2,
+      "avg_switches": 5.5,
+      "avg_keys": 29.5,
+      "avg_clicks": 19.5,
+      "dominant_path_ratio": 0.125,
+      "impact_score": 69.8,
+      "feasibility_score": 44.0,
+      "composite_score": 58.2,
+      "raw_metrics": {
+        "frequency": 24,
+        "cumulative_duration_sec": 1125.8,
+        "avg_duration_sec": 46.9,
+        "std_duration_sec": 57.1,
+        "time_share_pct": 11.41,
+        "session_count": 10,
+        "machine_count": 4,
+        "avg_events_per_run": 101.2,
+        "avg_app_switches": 5.5,
+        "avg_keystrokes": 29.5,
+        "avg_clicks": 19.5,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 21.9,
+        "total_errors": 3,
+        "distinct_variants": 18,
+        "dominant_path_ratio": 0.125,
+        "top_paths": [
+          {
+            "path": "#/payroll-items -> 財務会計システム -> #/payroll-items -> 財務会計システム -> #/payroll-items",
+            "count": 3,
+            "ratio": 0.12
+          },
+          {
+            "path": "#/payroll-items -> 受発注在庫管理システム and 2 more pages -> #/payroll-items -> 受発注在庫管理システム and 2 more pages -> #/payroll-items",
+            "count": 2,
+            "ratio": 0.08
+          },
+          {
+            "path": "#/payroll-items -> 受発注在庫管理システム and 1 more page -> #/payroll-items -> 受発注在庫管理システム and 1 more page -> #/payroll-items",
+            "count": 2,
+            "ratio": 0.08
+          }
+        ]
+      },
+      "priority_rank": 3
+    },
+    {
+      "label": "supplier_contact",
+      "frequency": 17,
+      "cumulative_duration_sec": 1111.2,
+      "avg_duration_sec": 65.4,
+      "time_share_pct": 11.27,
+      "session_count": 8,
+      "machine_count": 4,
+      "avg_events": 138.2,
+      "avg_switches": 18.9,
+      "avg_keys": 32.2,
+      "avg_clicks": 21.4,
+      "dominant_path_ratio": 0.118,
+      "impact_score": 61.0,
+      "feasibility_score": 39.7,
+      "composite_score": 51.4,
+      "raw_metrics": {
+        "frequency": 17,
+        "cumulative_duration_sec": 1111.2,
+        "avg_duration_sec": 65.4,
+        "std_duration_sec": 35.1,
+        "time_share_pct": 11.27,
+        "session_count": 8,
+        "machine_count": 4,
+        "avg_events_per_run": 138.2,
+        "avg_app_switches": 18.9,
+        "avg_keystrokes": 32.2,
+        "avg_clicks": 21.4,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 13.5,
+        "total_errors": 0,
+        "distinct_variants": 16,
+        "dominant_path_ratio": 0.118,
+        "top_paths": [
+          {
+            "path": "#/leave-applications -> HR人事給与システム -> #/leave-applications -> HR人事給与システム -> #/leave-applications",
+            "count": 2,
+            "ratio": 0.12
+          },
+          {
+            "path": "#/leave-applications -> 財務会計システム and 1 more page -> #/leave-applications -> 財務会計システム and 1 more page -> #/leave-applications",
+            "count": 1,
+            "ratio": 0.06
+          },
+          {
+            "path": "*IT申請メモ -> #/leave-applications -> *IT申請メモ -> #/leave-applications -> 受発注在庫管理システム and 1 more page",
+            "count": 1,
+            "ratio": 0.06
+          }
+        ]
+      },
+      "priority_rank": 4
+    },
+    {
+      "label": "invoice_approval",
+      "frequency": 17,
+      "cumulative_duration_sec": 777.5,
+      "avg_duration_sec": 45.7,
+      "time_share_pct": 7.88,
+      "session_count": 8,
+      "machine_count": 4,
+      "avg_events": 90.0,
+      "avg_switches": 5.0,
+      "avg_keys": 14.9,
+      "avg_clicks": 25.1,
+      "dominant_path_ratio": 0.353,
+      "impact_score": 48.7,
+      "feasibility_score": 53.1,
+      "composite_score": 50.7,
+      "raw_metrics": {
+        "frequency": 17,
+        "cumulative_duration_sec": 777.5,
+        "avg_duration_sec": 45.7,
+        "std_duration_sec": 16.9,
+        "time_share_pct": 7.88,
+        "session_count": 8,
+        "machine_count": 4,
+        "avg_events_per_run": 90.0,
+        "avg_app_switches": 5.0,
+        "avg_keystrokes": 14.9,
+        "avg_clicks": 25.1,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 9.2,
+        "total_errors": 3,
+        "distinct_variants": 10,
+        "dominant_path_ratio": 0.353,
+        "top_paths": [
+          {
+            "path": "#/resident-tax -> 財務会計システム -> #/resident-tax -> 財務会計システム -> #/resident-tax",
+            "count": 6,
+            "ratio": 0.35
+          },
+          {
+            "path": "#/resident-tax -> 財務会計システム and 1 more page -> #/resident-tax -> 財務会計システム and 1 more page -> #/resident-tax",
+            "count": 3,
+            "ratio": 0.18
+          },
+          {
+            "path": "Windows PowerShell -> / -> Calendar | New meeting | Microsoft Teams -> / -> 受発注在庫管理システム",
+            "count": 1,
+            "ratio": 0.06
+          }
+        ]
+      },
+      "priority_rank": 5
+    },
+    {
+      "label": "shipment_tracking",
+      "frequency": 14,
+      "cumulative_duration_sec": 499.7,
+      "avg_duration_sec": 35.7,
+      "time_share_pct": 5.07,
+      "session_count": 5,
+      "machine_count": 4,
+      "avg_events": 80.4,
+      "avg_switches": 5.1,
+      "avg_keys": 18.8,
+      "avg_clicks": 17.4,
+      "dominant_path_ratio": 0.286,
+      "impact_score": 34.9,
+      "feasibility_score": 50.4,
+      "composite_score": 41.9,
+      "raw_metrics": {
+        "frequency": 14,
+        "cumulative_duration_sec": 499.7,
+        "avg_duration_sec": 35.7,
+        "std_duration_sec": 18.7,
+        "time_share_pct": 5.07,
+        "session_count": 5,
+        "machine_count": 4,
+        "avg_events_per_run": 80.4,
+        "avg_app_switches": 5.1,
+        "avg_keystrokes": 18.8,
+        "avg_clicks": 17.4,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 12.7,
+        "total_errors": 3,
+        "distinct_variants": 9,
+        "dominant_path_ratio": 0.286,
+        "top_paths": [
+          {
+            "path": "#/social-insurance -> HR人事給与システム -> #/social-insurance -> HR人事給与システム -> #/social-insurance",
+            "count": 4,
+            "ratio": 0.29
+          },
+          {
+            "path": "#/social-insurance -> 財務会計システム -> #/social-insurance -> 財務会計システム -> #/social-insurance",
+            "count": 2,
+            "ratio": 0.14
+          },
+          {
+            "path": "*IT申請メモ -> #/social-insurance -> 受発注在庫管理システム -> #/social-insurance -> 受発注在庫管理システム",
+            "count": 2,
+            "ratio": 0.14
+          }
+        ]
+      },
+      "priority_rank": 6
+    },
+    {
+      "label": "childcare_leave",
+      "frequency": 11,
+      "cumulative_duration_sec": 583.0,
+      "avg_duration_sec": 53.0,
+      "time_share_pct": 5.91,
+      "session_count": 7,
+      "machine_count": 3,
+      "avg_events": 106.2,
+      "avg_switches": 4.1,
+      "avg_keys": 17.2,
+      "avg_clicks": 30.8,
+      "dominant_path_ratio": 0.273,
+      "impact_score": 34.5,
+      "feasibility_score": 49.9,
+      "composite_score": 41.4,
+      "raw_metrics": {
+        "frequency": 11,
+        "cumulative_duration_sec": 583.0,
+        "avg_duration_sec": 53.0,
+        "std_duration_sec": 36.6,
+        "time_share_pct": 5.91,
+        "session_count": 7,
+        "machine_count": 3,
+        "avg_events_per_run": 106.2,
+        "avg_app_switches": 4.1,
+        "avg_keystrokes": 17.2,
+        "avg_clicks": 30.8,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 10.5,
+        "total_errors": 3,
+        "distinct_variants": 8,
+        "dominant_path_ratio": 0.273,
+        "top_paths": [
+          {
+            "path": "#/leave-applications -> HR人事給与システム -> #/leave-applications -> HR人事給与システム -> #/leave-applications",
+            "count": 3,
+            "ratio": 0.27
+          },
+          {
+            "path": "#/leave-applications -> HR人事給与システム and 2 more pages -> #/leave-applications -> HR人事給与システム and 2 more pages -> #/leave-applications",
+            "count": 2,
+            "ratio": 0.18
+          },
+          {
+            "path": "Microsoft Teams -> Notepad -> https://app.slack.com/client/T016EU6KJDN/activity-inbox -> / -> https://app.slack.com/client/T016EU6KJDN/activity-inbox",
+            "count": 1,
+            "ratio": 0.09
+          }
+        ]
+      },
+      "priority_rank": 7
+    },
+    {
+      "label": "onboarding_allowance",
+      "frequency": 14,
+      "cumulative_duration_sec": 1012.1,
+      "avg_duration_sec": 72.3,
+      "time_share_pct": 10.26,
+      "session_count": 8,
+      "machine_count": 4,
+      "avg_events": 145.5,
+      "avg_switches": 20.1,
+      "avg_keys": 35.9,
+      "avg_clicks": 23.9,
+      "dominant_path_ratio": 0.143,
+      "impact_score": 53.8,
+      "feasibility_score": 25.7,
+      "composite_score": 41.2,
+      "raw_metrics": {
+        "frequency": 14,
+        "cumulative_duration_sec": 1012.1,
+        "avg_duration_sec": 72.3,
+        "std_duration_sec": 57.6,
+        "time_share_pct": 10.26,
+        "session_count": 8,
+        "machine_count": 4,
+        "avg_events_per_run": 145.5,
+        "avg_app_switches": 20.1,
+        "avg_keystrokes": 35.9,
+        "avg_clicks": 23.9,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 15.4,
+        "total_errors": 6,
+        "distinct_variants": 13,
+        "dominant_path_ratio": 0.143,
+        "top_paths": [
+          {
+            "path": "#/onboarding -> 財務会計システム -> #/onboarding -> 財務会計システム -> #/onboarding",
+            "count": 2,
+            "ratio": 0.14
+          },
+          {
+            "path": "#/onboarding -> HR人事給与システム -> #/onboarding -> shinkuitorihikisaki_touroku_tetsuzuki [Compatibility Mode] -> nyusha_checklist_shinsotsu_batch [Compatibility Mode]",
+            "count": 1,
+            "ratio": 0.07
+          },
+          {
+            "path": "Home -> #/onboarding -> HR人事給与システム -> #/onboarding -> HR人事給与システム",
+            "count": 1,
+            "ratio": 0.07
+          }
+        ]
+      },
+      "priority_rank": 8
+    },
+    {
+      "label": "payment_processing",
+      "frequency": 10,
+      "cumulative_duration_sec": 622.4,
+      "avg_duration_sec": 62.2,
+      "time_share_pct": 6.31,
+      "session_count": 5,
+      "machine_count": 3,
+      "avg_events": 143.2,
+      "avg_switches": 14.7,
+      "avg_keys": 41.3,
+      "avg_clicks": 22.6,
+      "dominant_path_ratio": 0.2,
+      "impact_score": 34.7,
+      "feasibility_score": 43.0,
+      "composite_score": 38.5,
+      "raw_metrics": {
+        "frequency": 10,
+        "cumulative_duration_sec": 622.4,
+        "avg_duration_sec": 62.2,
+        "std_duration_sec": 14.6,
+        "time_share_pct": 6.31,
+        "session_count": 5,
+        "machine_count": 3,
+        "avg_events_per_run": 143.2,
+        "avg_app_switches": 14.7,
+        "avg_keystrokes": 41.3,
+        "avg_clicks": 22.6,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 18.0,
+        "total_errors": 0,
+        "distinct_variants": 8,
+        "dominant_path_ratio": 0.2,
+        "top_paths": [
+          {
+            "path": "#/onboarding -> 財務会計システム and 1 more page -> #/onboarding -> 財務会計システム and 1 more page -> #/onboarding",
+            "count": 2,
+            "ratio": 0.2
+          },
+          {
+            "path": "#/onboarding -> 受発注在庫管理システム -> #/onboarding -> 受発注在庫管理システム -> #/onboarding",
+            "count": 2,
+            "ratio": 0.2
+          },
+          {
+            "path": "#/onboarding -> HR人事給与システム -> #/onboarding -> HR人事給与システム -> #/onboarding",
+            "count": 1,
+            "ratio": 0.1
+          }
+        ]
+      },
+      "priority_rank": 9
+    },
+    {
+      "label": "social_insurance",
+      "frequency": 10,
+      "cumulative_duration_sec": 459.3,
+      "avg_duration_sec": 45.9,
+      "time_share_pct": 4.66,
+      "session_count": 5,
+      "machine_count": 4,
+      "avg_events": 83.5,
+      "avg_switches": 7.9,
+      "avg_keys": 14.5,
+      "avg_clicks": 20.9,
+      "dominant_path_ratio": 0.2,
+      "impact_score": 28.7,
+      "feasibility_score": 48.0,
+      "composite_score": 37.4,
+      "raw_metrics": {
+        "frequency": 10,
+        "cumulative_duration_sec": 459.3,
+        "avg_duration_sec": 45.9,
+        "std_duration_sec": 12.4,
+        "time_share_pct": 4.66,
+        "session_count": 5,
+        "machine_count": 4,
+        "avg_events_per_run": 83.5,
+        "avg_app_switches": 7.9,
+        "avg_keystrokes": 14.5,
+        "avg_clicks": 20.9,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 8.4,
+        "total_errors": 0,
+        "distinct_variants": 9,
+        "dominant_path_ratio": 0.2,
+        "top_paths": [
+          {
+            "path": "#/social-insurance -> HR人事給与システム -> #/social-insurance -> HR人事給与システム -> #/social-insurance",
+            "count": 2,
+            "ratio": 0.2
+          },
+          {
+            "path": "#/social-insurance -> 財務会計システム -> #/social-insurance -> 財務会計システム -> #/social-insurance",
+            "count": 1,
+            "ratio": 0.1
+          },
+          {
+            "path": "#/social-insurance -> Untitled -> #/social-insurance -> ikuji_kyuugyou_kitei [Compatibility Mode] -> kazoku_teate_kitei [Compatibility Mode]",
+            "count": 1,
+            "ratio": 0.1
+          }
+        ]
+      },
+      "priority_rank": 10
+    },
+    {
+      "label": "bank_reconciliation",
+      "frequency": 8,
+      "cumulative_duration_sec": 528.7,
+      "avg_duration_sec": 66.1,
+      "time_share_pct": 5.36,
+      "session_count": 4,
+      "machine_count": 2,
+      "avg_events": 136.8,
+      "avg_switches": 17.5,
+      "avg_keys": 32.5,
+      "avg_clicks": 24.2,
+      "dominant_path_ratio": 0.25,
+      "impact_score": 28.9,
+      "feasibility_score": 45.0,
+      "composite_score": 36.2,
+      "raw_metrics": {
+        "frequency": 8,
+        "cumulative_duration_sec": 528.7,
+        "avg_duration_sec": 66.1,
+        "std_duration_sec": 14.4,
+        "time_share_pct": 5.36,
+        "session_count": 4,
+        "machine_count": 2,
+        "avg_events_per_run": 136.8,
+        "avg_app_switches": 17.5,
+        "avg_keystrokes": 32.5,
+        "avg_clicks": 24.2,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 14.0,
+        "total_errors": 0,
+        "distinct_variants": 7,
+        "dominant_path_ratio": 0.25,
+        "top_paths": [
+          {
+            "path": "#/leave-applications -> 財務会計システム -> #/leave-applications -> 財務会計システム -> #/leave-applications",
+            "count": 2,
+            "ratio": 0.25
+          },
+          {
+            "path": "#/leave-applications -> HR人事給与システム and 1 more page -> #/leave-applications -> HR人事給与システム and 1 more page -> #/leave-applications",
+            "count": 1,
+            "ratio": 0.12
+          },
+          {
+            "path": "#/leave-applications -> HR人事給与システム and 2 more pages -> #/leave-applications -> 財務会計システム and 2 more pages -> #/leave-applications",
+            "count": 1,
+            "ratio": 0.12
+          }
+        ]
+      },
+      "priority_rank": 11
+    },
+    {
+      "label": "budget_variance",
+      "frequency": 2,
+      "cumulative_duration_sec": 174.8,
+      "avg_duration_sec": 87.4,
+      "time_share_pct": 1.77,
+      "session_count": 2,
+      "machine_count": 2,
+      "avg_events": 408.0,
+      "avg_switches": 19.0,
+      "avg_keys": 271.0,
+      "avg_clicks": 24.5,
+      "dominant_path_ratio": 0.5,
+      "impact_score": 8.8,
+      "feasibility_score": 46.0,
+      "composite_score": 25.5,
+      "raw_metrics": {
+        "frequency": 2,
+        "cumulative_duration_sec": 174.8,
+        "avg_duration_sec": 87.4,
+        "std_duration_sec": 74.5,
+        "time_share_pct": 1.77,
+        "session_count": 2,
+        "machine_count": 2,
+        "avg_events_per_run": 408.0,
+        "avg_app_switches": 19.0,
+        "avg_keystrokes": 271.0,
+        "avg_clicks": 24.5,
+        "avg_clipboard_ops": 0.0,
+        "avg_input_chars": 232.0,
+        "total_errors": 3,
+        "distinct_variants": 2,
+        "dominant_path_ratio": 0.5,
+        "top_paths": [
+          {
+            "path": "Opening -> budget_analysis -> #/social-insurance -> HR人事給与システム -> #/social-insurance",
+            "count": 1,
+            "ratio": 0.5
+          },
+          {
+            "path": "Windows PowerShell -> ProcMine Agent -> Windows PowerShell -> / -> #/social-insurance",
+            "count": 1,
+            "ratio": 0.5
+          }
+        ]
+      },
+      "priority_rank": 12
+    }
+  ],
+  "detailed_metrics": {
+    "expense_claim": {
+      "frequency": 30,
+      "cumulative_duration_sec": 1625.7,
+      "avg_duration_sec": 54.2,
+      "std_duration_sec": 43.9,
+      "time_share_pct": 16.48,
+      "session_count": 13,
+      "machine_count": 4,
+      "avg_events_per_run": 113.3,
+      "avg_app_switches": 10.7,
+      "avg_keystrokes": 35.6,
+      "avg_clicks": 16.1,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 23.3,
+      "total_errors": 9,
+      "distinct_variants": 29,
+      "dominant_path_ratio": 0.067,
+      "top_paths": [
+        {
+          "path": "getsujitsu_teigaku_torihikisaki_ichiran -> #/payroll-items -> 財務会計システム -> #/payroll-items -> 財務会計システム",
+          "count": 2,
+          "ratio": 0.07
+        },
+        {
+          "path": "Windows PowerShell -> / -> Untitled and 1 more page -> / -> 受発注在庫管理システム and 1 more page",
+          "count": 1,
+          "ratio": 0.03
+        },
+        {
+          "path": "#/payroll-items -> 財務会計システム and 1 more page -> #/payroll-items -> 財務会計システム and 1 more page -> #/payroll-items",
+          "count": 1,
+          "ratio": 0.03
+        }
+      ]
+    },
+    "salary_maintenance": {
+      "frequency": 34,
+      "cumulative_duration_sec": 1343.0,
+      "avg_duration_sec": 39.5,
+      "std_duration_sec": 32.4,
+      "time_share_pct": 13.62,
+      "session_count": 10,
+      "machine_count": 4,
+      "avg_events_per_run": 86.4,
+      "avg_app_switches": 3.7,
+      "avg_keystrokes": 19.8,
+      "avg_clicks": 20.5,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 13.8,
+      "total_errors": 6,
+      "distinct_variants": 17,
+      "dominant_path_ratio": 0.206,
+      "top_paths": [
+        {
+          "path": "#/payroll-items -> HR人事給与システム and 1 more page -> #/payroll-items -> HR人事給与システム and 1 more page -> #/payroll-items",
+          "count": 7,
+          "ratio": 0.21
+        },
+        {
+          "path": "#/payroll-items -> HR人事給与システム -> #/payroll-items -> HR人事給与システム -> #/payroll-items",
+          "count": 6,
+          "ratio": 0.18
+        },
+        {
+          "path": "#/payroll-items -> 財務会計システム -> #/payroll-items -> 財務会計システム -> #/payroll-items",
+          "count": 4,
+          "ratio": 0.12
+        }
+      ]
+    },
+    "invoice_approval": {
+      "frequency": 17,
+      "cumulative_duration_sec": 777.5,
+      "avg_duration_sec": 45.7,
+      "std_duration_sec": 16.9,
+      "time_share_pct": 7.88,
+      "session_count": 8,
+      "machine_count": 4,
+      "avg_events_per_run": 90.0,
+      "avg_app_switches": 5.0,
+      "avg_keystrokes": 14.9,
+      "avg_clicks": 25.1,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 9.2,
+      "total_errors": 3,
+      "distinct_variants": 10,
+      "dominant_path_ratio": 0.353,
+      "top_paths": [
+        {
+          "path": "#/resident-tax -> 財務会計システム -> #/resident-tax -> 財務会計システム -> #/resident-tax",
+          "count": 6,
+          "ratio": 0.35
+        },
+        {
+          "path": "#/resident-tax -> 財務会計システム and 1 more page -> #/resident-tax -> 財務会計システム and 1 more page -> #/resident-tax",
+          "count": 3,
+          "ratio": 0.18
+        },
+        {
+          "path": "Windows PowerShell -> / -> Calendar | New meeting | Microsoft Teams -> / -> 受発注在庫管理システム",
+          "count": 1,
+          "ratio": 0.06
+        }
+      ]
+    },
+    "supplier_contact": {
+      "frequency": 17,
+      "cumulative_duration_sec": 1111.2,
+      "avg_duration_sec": 65.4,
+      "std_duration_sec": 35.1,
+      "time_share_pct": 11.27,
+      "session_count": 8,
+      "machine_count": 4,
+      "avg_events_per_run": 138.2,
+      "avg_app_switches": 18.9,
+      "avg_keystrokes": 32.2,
+      "avg_clicks": 21.4,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 13.5,
+      "total_errors": 0,
+      "distinct_variants": 16,
+      "dominant_path_ratio": 0.118,
+      "top_paths": [
+        {
+          "path": "#/leave-applications -> HR人事給与システム -> #/leave-applications -> HR人事給与システム -> #/leave-applications",
+          "count": 2,
+          "ratio": 0.12
+        },
+        {
+          "path": "#/leave-applications -> 財務会計システム and 1 more page -> #/leave-applications -> 財務会計システム and 1 more page -> #/leave-applications",
+          "count": 1,
+          "ratio": 0.06
+        },
+        {
+          "path": "*IT申請メモ -> #/leave-applications -> *IT申請メモ -> #/leave-applications -> 受発注在庫管理システム and 1 more page",
+          "count": 1,
+          "ratio": 0.06
+        }
+      ]
+    },
+    "shipment_tracking": {
+      "frequency": 14,
+      "cumulative_duration_sec": 499.7,
+      "avg_duration_sec": 35.7,
+      "std_duration_sec": 18.7,
+      "time_share_pct": 5.07,
+      "session_count": 5,
+      "machine_count": 4,
+      "avg_events_per_run": 80.4,
+      "avg_app_switches": 5.1,
+      "avg_keystrokes": 18.8,
+      "avg_clicks": 17.4,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 12.7,
+      "total_errors": 3,
+      "distinct_variants": 9,
+      "dominant_path_ratio": 0.286,
+      "top_paths": [
+        {
+          "path": "#/social-insurance -> HR人事給与システム -> #/social-insurance -> HR人事給与システム -> #/social-insurance",
+          "count": 4,
+          "ratio": 0.29
+        },
+        {
+          "path": "#/social-insurance -> 財務会計システム -> #/social-insurance -> 財務会計システム -> #/social-insurance",
+          "count": 2,
+          "ratio": 0.14
+        },
+        {
+          "path": "*IT申請メモ -> #/social-insurance -> 受発注在庫管理システム -> #/social-insurance -> 受発注在庫管理システム",
+          "count": 2,
+          "ratio": 0.14
+        }
+      ]
+    },
+    "inventory_adjustment": {
+      "frequency": 24,
+      "cumulative_duration_sec": 1125.8,
+      "avg_duration_sec": 46.9,
+      "std_duration_sec": 57.1,
+      "time_share_pct": 11.41,
+      "session_count": 10,
+      "machine_count": 4,
+      "avg_events_per_run": 101.2,
+      "avg_app_switches": 5.5,
+      "avg_keystrokes": 29.5,
+      "avg_clicks": 19.5,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 21.9,
+      "total_errors": 3,
+      "distinct_variants": 18,
+      "dominant_path_ratio": 0.125,
+      "top_paths": [
+        {
+          "path": "#/payroll-items -> 財務会計システム -> #/payroll-items -> 財務会計システム -> #/payroll-items",
+          "count": 3,
+          "ratio": 0.12
+        },
+        {
+          "path": "#/payroll-items -> 受発注在庫管理システム and 2 more pages -> #/payroll-items -> 受発注在庫管理システム and 2 more pages -> #/payroll-items",
+          "count": 2,
+          "ratio": 0.08
+        },
+        {
+          "path": "#/payroll-items -> 受発注在庫管理システム and 1 more page -> #/payroll-items -> 受発注在庫管理システム and 1 more page -> #/payroll-items",
+          "count": 2,
+          "ratio": 0.08
+        }
+      ]
+    },
+    "onboarding_allowance": {
+      "frequency": 14,
+      "cumulative_duration_sec": 1012.1,
+      "avg_duration_sec": 72.3,
+      "std_duration_sec": 57.6,
+      "time_share_pct": 10.26,
+      "session_count": 8,
+      "machine_count": 4,
+      "avg_events_per_run": 145.5,
+      "avg_app_switches": 20.1,
+      "avg_keystrokes": 35.9,
+      "avg_clicks": 23.9,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 15.4,
+      "total_errors": 6,
+      "distinct_variants": 13,
+      "dominant_path_ratio": 0.143,
+      "top_paths": [
+        {
+          "path": "#/onboarding -> 財務会計システム -> #/onboarding -> 財務会計システム -> #/onboarding",
+          "count": 2,
+          "ratio": 0.14
+        },
+        {
+          "path": "#/onboarding -> HR人事給与システム -> #/onboarding -> shinkuitorihikisaki_touroku_tetsuzuki [Compatibility Mode] -> nyusha_checklist_shinsotsu_batch [Compatibility Mode]",
+          "count": 1,
+          "ratio": 0.07
+        },
+        {
+          "path": "Home -> #/onboarding -> HR人事給与システム -> #/onboarding -> HR人事給与システム",
+          "count": 1,
+          "ratio": 0.07
+        }
+      ]
+    },
+    "budget_variance": {
+      "frequency": 2,
+      "cumulative_duration_sec": 174.8,
+      "avg_duration_sec": 87.4,
+      "std_duration_sec": 74.5,
+      "time_share_pct": 1.77,
+      "session_count": 2,
+      "machine_count": 2,
+      "avg_events_per_run": 408.0,
+      "avg_app_switches": 19.0,
+      "avg_keystrokes": 271.0,
+      "avg_clicks": 24.5,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 232.0,
+      "total_errors": 3,
+      "distinct_variants": 2,
+      "dominant_path_ratio": 0.5,
+      "top_paths": [
+        {
+          "path": "Opening -> budget_analysis -> #/social-insurance -> HR人事給与システム -> #/social-insurance",
+          "count": 1,
+          "ratio": 0.5
+        },
+        {
+          "path": "Windows PowerShell -> ProcMine Agent -> Windows PowerShell -> / -> #/social-insurance",
+          "count": 1,
+          "ratio": 0.5
+        }
+      ]
+    },
+    "social_insurance": {
+      "frequency": 10,
+      "cumulative_duration_sec": 459.3,
+      "avg_duration_sec": 45.9,
+      "std_duration_sec": 12.4,
+      "time_share_pct": 4.66,
+      "session_count": 5,
+      "machine_count": 4,
+      "avg_events_per_run": 83.5,
+      "avg_app_switches": 7.9,
+      "avg_keystrokes": 14.5,
+      "avg_clicks": 20.9,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 8.4,
+      "total_errors": 0,
+      "distinct_variants": 9,
+      "dominant_path_ratio": 0.2,
+      "top_paths": [
+        {
+          "path": "#/social-insurance -> HR人事給与システム -> #/social-insurance -> HR人事給与システム -> #/social-insurance",
+          "count": 2,
+          "ratio": 0.2
+        },
+        {
+          "path": "#/social-insurance -> 財務会計システム -> #/social-insurance -> 財務会計システム -> #/social-insurance",
+          "count": 1,
+          "ratio": 0.1
+        },
+        {
+          "path": "#/social-insurance -> Untitled -> #/social-insurance -> ikuji_kyuugyou_kitei [Compatibility Mode] -> kazoku_teate_kitei [Compatibility Mode]",
+          "count": 1,
+          "ratio": 0.1
+        }
+      ]
+    },
+    "payment_processing": {
+      "frequency": 10,
+      "cumulative_duration_sec": 622.4,
+      "avg_duration_sec": 62.2,
+      "std_duration_sec": 14.6,
+      "time_share_pct": 6.31,
+      "session_count": 5,
+      "machine_count": 3,
+      "avg_events_per_run": 143.2,
+      "avg_app_switches": 14.7,
+      "avg_keystrokes": 41.3,
+      "avg_clicks": 22.6,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 18.0,
+      "total_errors": 0,
+      "distinct_variants": 8,
+      "dominant_path_ratio": 0.2,
+      "top_paths": [
+        {
+          "path": "#/onboarding -> 財務会計システム and 1 more page -> #/onboarding -> 財務会計システム and 1 more page -> #/onboarding",
+          "count": 2,
+          "ratio": 0.2
+        },
+        {
+          "path": "#/onboarding -> 受発注在庫管理システム -> #/onboarding -> 受発注在庫管理システム -> #/onboarding",
+          "count": 2,
+          "ratio": 0.2
+        },
+        {
+          "path": "#/onboarding -> HR人事給与システム -> #/onboarding -> HR人事給与システム -> #/onboarding",
+          "count": 1,
+          "ratio": 0.1
+        }
+      ]
+    },
+    "childcare_leave": {
+      "frequency": 11,
+      "cumulative_duration_sec": 583.0,
+      "avg_duration_sec": 53.0,
+      "std_duration_sec": 36.6,
+      "time_share_pct": 5.91,
+      "session_count": 7,
+      "machine_count": 3,
+      "avg_events_per_run": 106.2,
+      "avg_app_switches": 4.1,
+      "avg_keystrokes": 17.2,
+      "avg_clicks": 30.8,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 10.5,
+      "total_errors": 3,
+      "distinct_variants": 8,
+      "dominant_path_ratio": 0.273,
+      "top_paths": [
+        {
+          "path": "#/leave-applications -> HR人事給与システム -> #/leave-applications -> HR人事給与システム -> #/leave-applications",
+          "count": 3,
+          "ratio": 0.27
+        },
+        {
+          "path": "#/leave-applications -> HR人事給与システム and 2 more pages -> #/leave-applications -> HR人事給与システム and 2 more pages -> #/leave-applications",
+          "count": 2,
+          "ratio": 0.18
+        },
+        {
+          "path": "Microsoft Teams -> Notepad -> https://app.slack.com/client/T016EU6KJDN/activity-inbox -> / -> https://app.slack.com/client/T016EU6KJDN/activity-inbox",
+          "count": 1,
+          "ratio": 0.09
+        }
+      ]
+    },
+    "bank_reconciliation": {
+      "frequency": 8,
+      "cumulative_duration_sec": 528.7,
+      "avg_duration_sec": 66.1,
+      "std_duration_sec": 14.4,
+      "time_share_pct": 5.36,
+      "session_count": 4,
+      "machine_count": 2,
+      "avg_events_per_run": 136.8,
+      "avg_app_switches": 17.5,
+      "avg_keystrokes": 32.5,
+      "avg_clicks": 24.2,
+      "avg_clipboard_ops": 0.0,
+      "avg_input_chars": 14.0,
+      "total_errors": 0,
+      "distinct_variants": 7,
+      "dominant_path_ratio": 0.25,
+      "top_paths": [
+        {
+          "path": "#/leave-applications -> 財務会計システム -> #/leave-applications -> 財務会計システム -> #/leave-applications",
+          "count": 2,
+          "ratio": 0.25
+        },
+        {
+          "path": "#/leave-applications -> HR人事給与システム and 1 more page -> #/leave-applications -> HR人事給与システム and 1 more page -> #/leave-applications",
+          "count": 1,
+          "ratio": 0.12
+        },
+        {
+          "path": "#/leave-applications -> HR人事給与システム and 2 more pages -> #/leave-applications -> 財務会計システム and 2 more pages -> #/leave-applications",
+          "count": 1,
+          "ratio": 0.12
+        }
+      ]
+    }
+  }
+}
