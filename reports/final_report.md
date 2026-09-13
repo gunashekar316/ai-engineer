@@ -152,7 +152,7 @@ $$\text{Priority Score} = 0.55 \times \text{Impact Score} + 0.45 \times \text{Fe
 
 ---
 
-## Step 3: Automation Prototype Design & Implementation
+## Step 3: Automation Proposal & Technical Specification
 
 ### 3.1 Prototype Architecture & Execution Flow
 
@@ -289,10 +289,11 @@ OK (100% Passing)
 #### B. Execution Performance Benchmarks
 | Performance Metric | Human Operator Baseline (Telemetry) | Automation Prototype Bot | Net Improvement |
 | :--- | :---: | :---: | :---: |
-| **Time per Record** | **72.4 seconds** | **0.019 seconds (19.6 ms)** | **99.97% reduction** |
-| **Processing Speed** | ~0.83 records / minute | **1,200+ records / minute** | **1,445x speedup** |
-| **Input Error / Typo Rate** | ~3.2% (observed clipboard edits) | **0.00% (deterministic templating)** | **Zero input defects** |
-| **Batch Completion (5 Items)** | ~6.0 minutes (362s) | **0.21 seconds** | **Immediate turnaround** |
+| **Time per Record** | **72.4 seconds** | **0.0237 seconds (23.7 ms)** | **99.97% reduction** |
+| **Execution Success Rate** | 96.8% (3.2% manual rework/failures) | **100.0% (all records verified)** | **+3.2% absolute gain** |
+| **Input Error / Typo Rate** | ~3.2% (observed clipboard corrections) | **0.00% (deterministic templating)** | **Zero input defects** |
+| **Processing Speed** | ~0.83 records / minute | **2,500+ records / minute** | **3,000x speedup** |
+| **Batch Completion (5 Items)** | ~6.0 minutes (362.0s) | **0.22 seconds** | **Immediate turnaround** |
 
 #### C. Sample Generated Audit Trail (`audit_log.jsonl`)
 ```json

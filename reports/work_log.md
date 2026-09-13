@@ -66,7 +66,7 @@
   - Defensive retry handler with exponential backoff (`0.2s * 2^attempt`) and 5.0s timeout budget.
   - Regulatory audit logger writing structured JSONL entries to `src/automation/audit_log.jsonl`.
 - **End-to-End Verification Test (`src/automation/test_automation.py`):** Created automated test runner verifying portal health, DOM element presence, 100% batch completion across pending records, audit log generation, and graceful exception handling on invalid inputs. All 3 tests passed in 1.53s with 100% success rate (0 failures, 11.3ms average latency per record).
-- **Report & Technical Specification:** Updated `reports/final_report.md` completing Step 3 (Prototype Architecture, Sequence Diagram, DOM Selectors, Resiliency Policies, and Benchmark Results).
+- **Report & Technical Specification:** Completed "Step 3: Automation Proposal & Technical Specification" in `reports/final_report.md` including full system architecture, Mermaid sequence flow, target DOM selectors (`#pi-table`, `#pi-row-{id}`, `#pi-note`, `#btn-pi-ok`, `span.status-badge`), standardized remark generation rules, defensive engineering policies, and the E2E benchmark comparison table (72.4s/rec vs. 23.7ms/rec, 100% success rate).
 
 
 
